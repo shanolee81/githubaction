@@ -24,7 +24,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Print Hello World in Test
-        run: echo "Hello, World! Testing the project..."
+        run: |
+          echo "Hello, World! Testing the project..."
+          echo "The secret is ${{ secrets.MY_SECRET_NAME }}"
 
   deploy:
     runs-on: ubuntu-latest
