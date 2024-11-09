@@ -4,7 +4,7 @@ name: Test Hello
 on:
   push:
     branches:
-      - main  # Runs the action on push events to the "main" branch
+      - main2  # Runs the action on push events to the "main" branch
   pull_request:
     branches:
       - main  # Optional: Runs on pull requests targeting the "main" branch
