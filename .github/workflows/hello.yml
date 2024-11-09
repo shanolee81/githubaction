@@ -1,0 +1,21 @@
+# .github/workflows/hello-world.yml
+name: Test Hello
+
+on:
+  push:
+    branches:
+      - main  # Runs the action on push events to the "main" branch
+  pull_request:
+    branches:
+      - main  # Optional: Runs on pull requests targeting the "main" branch
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Checks out your repository code
+
+      - name: Print Hello World
+        run: echo "Hello, World!"
