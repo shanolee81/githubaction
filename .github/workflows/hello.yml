@@ -29,4 +29,4 @@ jobs:
     - name: Run tests with pytest
       run: |
         # Run pytest to discover and run tests
-        python hello.py
+         pytest --maxfail=1 --disable-warnings -q
